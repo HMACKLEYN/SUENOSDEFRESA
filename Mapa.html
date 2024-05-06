@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa de Bogotá</title>
+    <style>
+        /* Estilos para el contenedor del mapa */
+        #map {
+            height: 400px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <!-- Contenedor del mapa -->
+    <div id="map"></div>
+
+    <script>
+        // Función para inicializar y mostrar el mapa
+        function initMap() {
+            // Coordenadas de la ubicación en Bogotá
+            var bogota = {lat: 4.512017, lng: -74.162506};
+            
+            // Crear un nuevo mapa en el contenedor con id="map"
+            var map = new google.maps.Map(
+                document.getElementById('map'), {
+                    zoom: 15, // Nivel de zoom inicial
+                    center: bogota // Centrar el mapa en Bogotá
+                });
+
+            // Crear un marcador en la ubicación de Bogotá
+            var marker = new google.maps.Marker({
+                position: bogota,
+                map: map,
+                title: 'Via Mochuelo Quiba, Bogotá' // Título del marcador
+            });
+        }
+    </script>
+
+    <!-- Enlace al API de Google Maps con la clave de API -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBTnaYyZrnBJfQqpsitlgNO1FDDfrZJ6yc&callback=initMap" async defer></script>
+    <!-- Reemplaza 'TU_CLAVE_DE_API' con tu propia clave de API -->
+
+</body>
+</html>

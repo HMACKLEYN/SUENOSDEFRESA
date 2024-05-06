@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #F4ECDF;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 2em;
+    color: #709A89;
+    pointer-events: none;
+    margin-right: 27px;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #EC5E5C;
+    padding: 6px 15px;
+    border-radius: 20px;
+    margin: 0 10px;
+    font-weight: 600;
+}
+
+.navigation a:hover, 
+.navigation a.active {
+    background: #EC5E5C;
+    color: #fff;
+}
+
+.parallax {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#text {
+    position: absolute;
+    font-size: 5em;
+    color: #fff;
+    text-shadow: 2px 2px 4px (0, 0, 0, .2);
+}
+
+.parallax img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    pointer-events: none;
+}
+
+.sec {
+    position: relative;
+    background: #589A88;
+    padding: 300px;
+}
+
+.sec1 {
+    position: relative;
+    background: #9dd4ab;
+    padding: 300px;
+}
+
+
+.sec h2 {
+    font-size: 3em;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.sec p {
+    font-size: 1em;
+    color: #fff;
+    font-weight: 300;
+}
+
+#parallax-container,
+#parallax-container2 {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.parallax-layer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+
+
+
+@keyframes flotarHill6 {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+#hill6 {
+    animation: flotarHill6 1.5s ease-in-out infinite;
+    /* Resto de estilos para hill6 si los hay */
+}
+
+
+#leaf {
+    animation: flotarHill6 5s ease-in-out infinite;
+    /* Resto de estilos para hill6 si los hay */
+}
+ 
+
+#logo {
+    animation: flotarHill6 7s ease-in-out infinite;
+    /* Resto de estilos para hill6 si los hay */
+    
+}
+
+
+#CIRCULO1 {
+    animation: flotarHill6 2s ease-in-out infinite;
+    /* Resto de estilos para hill6 si los hay */
+    
+}
+
+#CIRCULO2 {
+    animation: flotarHill6 2s ease-in-out infinite;
+    /* Resto de estilos para hill6 si los hay */
+    
+}
+
+#DESLIZA {
+    animation: flotarHill6 1s ease-in-out infinite;
+    /* Resto de estilos para hill6 si los hay */
+    
+}
+
+#C52 {
+    animation: flotarHill6 1s ease-in-out infinite;
+    /* Resto de estilos para hill6 si los hay */
+    
+}
+
+
+
+
+
